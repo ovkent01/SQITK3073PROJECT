@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-This Streamlit-powered dashboard allows users to compare and forecast the performance of up to 5 selected Malaysian stocks. The application retrieves 3-month historical stock data via the Yahoo Finance API and provides optional 30-day price predictions using the Random Forest machine learning model.
+This is a group project for the SQIT 3073: Business Analytic Programming course. This Streamlit-powered dashboard allows users to compare and forecast the performance of up to 5 selected Malaysian stocks. The application retrieves 3-month historical stock data via the Yahoo Finance API and provides optional 30-day price predictions using the Random Forest machine learning model.
 
 Developed as part of a project for data analytics learning, this tool aims to make stock trend analysis intuitive and accessible.
 
@@ -25,3 +25,4 @@ Developed as part of a project for data analytics learning, this tool aims to ma
 ```bash
 git clone https://github.com/your-username/stock-forecast-dashboard.git
 cd stock-forecast-dashboard
+
