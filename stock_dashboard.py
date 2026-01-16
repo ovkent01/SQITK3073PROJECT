@@ -82,8 +82,8 @@ if mode == "Comparison Graph":
         fig.savefig(buf, format="png", dpi=100, bbox_inches="tight")
         st.image(buf)
 
-        price1 = float(df1['Close'].iloc[-1])
-        price2 = float(df2['Close'].iloc[-1])
+        price1 = float(df1['Close'].values[-1])
+        price2 = float(df2['Close'].values[-1])
         st.caption(f"{stock1} Closing Price: RM {price1:.2f}")
         st.caption(f"{stock2} Closing Price: RM {price2:.2f}")
 
@@ -188,7 +188,8 @@ elif mode == "Stock Forecast":
         fig.savefig(buf, format="png", dpi=100, bbox_inches="tight")
         st.image(buf)
 
-        closing_price = float(df['Close'].iloc[-1])
+        # .item() 会自动把里面的数值取出来，不管它包了几层壳
+        closing_price = df['Close'].iloc[-1].item()
         st.caption(f"Closing Price: RM {closing_price:.2f}")
 
         if view_option == "Historical + Prediction":
